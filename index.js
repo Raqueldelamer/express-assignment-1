@@ -11,6 +11,7 @@ app.get("/cats", (req, res) => {
     res.send(`{
         "name": "Minou",
         "age": 4
+        "color": "tabby",
     }`);
 });
 
@@ -19,6 +20,7 @@ app.get("/boy-cat", (req, res) => {
     res.send(`{
         "name": "Orpheo",
         "age": 1
+        "color": "grey",
     }`);
 });
 
@@ -27,6 +29,7 @@ app.post("/girl-cat", (req, res) => {
     res.send(`{
         "name": "Sheba",
         "age": 2
+        "color": "black",
     }`);
 });
 
