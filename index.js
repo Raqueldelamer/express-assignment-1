@@ -14,7 +14,15 @@ app.get("/cats", (req, res) => {
     }`);
 });
 
-app.post("/cats", (req, res) => {
+app.get("/boy-cat", (req, res) => {
+    res.type("json");
+    res.send(`{
+        "name": "Orpheo",
+        "age": 1
+    }`);
+});
+
+app.post("/girl-cat", (req, res) => {
     res.type("json");
     res.send(`{
         "name": "Sheba",
